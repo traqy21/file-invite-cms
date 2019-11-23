@@ -1,0 +1,74 @@
+<template>
+    <div>
+        <b-tabs content-class="mt-3" >
+            <b-tab title="Sms Notifications" active>
+                <template>
+                    <div>
+                        <b-table striped hover :items="items" :fields="fields"></b-table>
+                    </div>
+                </template>
+            </b-tab>
+
+            <b-tab title="Email Notifications"><p>I'm the second tab</p></b-tab>
+
+        </b-tabs>
+    </div>
+</template>
+<script>
+ //   import { PaperTable } from "@/components";
+
+    export default {
+        // components: {
+        //     PaperTable
+        // },
+        data() {
+            return {
+                fields:  ["Id", "Name", "Description", "Status", "Time","Frequency","Operations"],
+                items: [
+                    {
+                        id: 1,
+                        name: "Test SMS",
+                        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+                        status: "Done",
+                        time: "08:00",
+                        frequency : "Weekly"
+                    },
+                    {
+                        id: 2,
+                            name: "Test SMS 2 ",
+                        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+                        status: "Done",
+                        time: "09:00",
+                        frequency : "Everyday"
+                    },
+                    {
+                        id: 3,
+                            name: "Test SMS 3",
+                        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+                        status: "Done",
+                        time: "10:00",
+                        frequency : "Weekly"
+                    },
+                    {
+                        id: 4,
+                            name: "Test SMS 4",
+                        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+                        status: "Done",
+                        time: "11:00",
+                        frequency : "Everyday"
+                    },
+                    {
+                        id: 5,
+                            name: "Test SMS",
+                        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+                        status: "Done",
+                        time: "08:00",
+                        frequency : "Everyday"
+                    }
+                ]
+            };
+        }
+    };
+</script>
+<style>
+</style>

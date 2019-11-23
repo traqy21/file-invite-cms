@@ -1,0 +1,46 @@
+.login-panel {
+    background-color: #f4f3ef;
+    position: relative;
+    z-index: 2;
+    float: right;
+    width: 100%;
+    min-height: 100%;
+    overflow: auto;
+}
+   
+.modal-backdrop
+{
+    opacity:0.5 !important;
+}
+
+/* .modal-backdrop {
+    background-color: rgba(51, 49, 49, 0) !important;
+} */
+
+.modal-header { 
+    background-color: #68B3C8;
+    color: #ffffff;
+}
+
+.modal-body { 
+    background-color: #f1eeeb;
+}
+
+.b-tabs{
+    background-color: #ffffff;
+}
+.b-tab{
+    margin: 5px;
+}
+
+.custom-table{
+    background-color: #ffffff;
+}
+/* .modal-footer { 
+    background-color: #f1d2af;
+} */
+
+.custom-input{
+    background-color: #9a8a67;
+    color: #212120;
+}
